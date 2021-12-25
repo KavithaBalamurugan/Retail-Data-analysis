@@ -1,0 +1,61 @@
+A centralised Kafka server has been set up where the data will be hosted. The details of the Kafka server, such as the broker and topic, will be shared to you in the next segment.
+
+ 
+
+The data is based on an Online Retail Data Set in the UCI Machine Learning Repository. Each order’s invoice has been represented in a JSON format. The sample data looks like this.
+
+ 
+
+{
+  "invoice_no": 154132541653705,
+  "country": "United Kingdom",
+  "timestamp": "2020-09-18 10:55:23",
+  "type": "ORDER",
+  "items": [
+    {
+      "SKU": "21485",
+      "title": "RETROSPOT HEART HOT WATER BOTTLE",
+      "unit_price": 4.95,
+      "quantity": 6
+    },
+    {
+      "SKU": "23499",
+      "title": "SET 12 VINTAGE DOILY CHALK",
+      "unit_price": 0.42,
+      "quantity": 2
+    }
+  ]  
+}
+ 
+
+ 
+
+As you can see, the data contains the following information:
+
+Invoice number: Identifier of the invoice
+
+Country: Country where the order is placed
+
+Timestamp: Time at which the order is placed
+
+Type: Whether this is a new order or a return order
+
+SKU (Stock Keeping Unit): Identifier of the product being ordered
+
+Title: Name of the product is ordered
+
+Unit price: Price of a single unit of the product
+
+Quantity: Quantity of the product being ordered
+
+You will be using these columns to derive some additional columns as well, which will help you in calculating the KPIs. You will learn more about this in the next segment.
+
+ 
+
+Acknowledgement
+The data was published in the UCI Machine Learning Repository by Dr Daqing Chen, Director: Public Analytics group.
+
+ 
+
+Reference
+Daqing Chen, Sai Liang Sain, and Kun Guo, Data mining for the online retail industry: A case study of RFM model-based customer segmentation using data mining, Journal of Database Marketing and Customer Strategy Management, Vol. 19, No. 3, pp. 197â€“208, 2012 (Published online before print: 27 August 2012. doi: 10.1057/dbm.2012.17).
